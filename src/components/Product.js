@@ -13,7 +13,7 @@ export default class Product extends Component {
           <ProductConsumer>
             {(value) => (
               <div
-                className="img-container p-5"
+                className="img-container"
                 onClick={() => value.handleDetail(id)}>
                 <Link to="/details">
                   <img src={img} alt={id} className="card-img-top" />
@@ -66,7 +66,7 @@ const ProductWrapper = styled.div`
       box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
     }
     .card-footer {
-      background: rgba(247, 247, 247)
+      background: rgba(247, 247, 247);
     }
   }
   .img-container {
@@ -74,7 +74,7 @@ const ProductWrapper = styled.div`
     overflow: hidden;
   }
   .card-img-top {
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
   }
   .img-container:hover .card-img-top {
     transform: scale(1.2);
@@ -82,21 +82,19 @@ const ProductWrapper = styled.div`
   .cart-btn {
     position: absolute;
     bottom: 0;
-    right: 0;
-    padding: 0.2rem 0.4rem;
-    background: var(--lightBlue);
+    right: 10px;
+    padding: 0.2rem 0.5rem;
+    background: black;
     border: none;
     color: var(--mainWhite);
     font-size: 1.4rem;
-    border-radius: 0.5rem 0 0 0;
-    transform: translate(100%, 100%);
-    transition: all 0.3s linear;
+    border-radius: 0.5rem 0;
   }
   .img-container:hover .cart-btn {
     transform: translate(0, 0);
   }
   .cart-btn {
-    color: var(--mainBlue);
+    color: white;
     cursor: pointer;
   }
 `
