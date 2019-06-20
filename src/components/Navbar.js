@@ -33,9 +33,9 @@ class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-  background: #2f3640;
+  background: white;
   .nav-link {
-    color: var(--mainWhite) !important;
+    color: black !important;
     font-size: 1.3rem;
     text-transform: capitalize;
   }

@@ -5,8 +5,8 @@ export const ButtonContainer = styled.button`
   font-size: 1.4rem;
   background: transparent;
   border: 0.05rem solid var(--mainBlack);
-  border-color: var(--mainWhite);
-  color: var(--mainWhite);
+  border-color: var(--mainBlack);
+  color: var(--mainBlack);
   border-radius: 0.5rem;
   padding: 0.2rem 0.5rem;
   cursor: pointer;
